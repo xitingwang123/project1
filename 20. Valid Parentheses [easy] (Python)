@@ -1,0 +1,16 @@
+class Solution:
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        """
+        values={')':'(','}':'{',']':'['}
+        pars=[None]
+        for i in s:
+            if i in values:
+                if values[i] != pars.pop():
+                    return False
+            else:
+                pars.append(i)
+        return len(pars) ==1"""
